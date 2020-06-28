@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8a602656-1393-4690-9886-1e99246a0b45" name="Default Changelist" comment="" />
+    <list default="true" id="8a602656-1393-4690-9886-1e99246a0b45" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/week01.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/week01.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maoyan/maoyan/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/maoyan/maoyan/items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maoyan/maoyan/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/maoyan/maoyan/pipelines.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maoyan/maoyan/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/maoyan/maoyan/settings.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,7 +39,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1593327192823</updated>
-      <workItem from="1593327196588" duration="1291000" />
+      <workItem from="1593327196588" duration="5798000" />
     </task>
     <servers />
   </component>
