@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import scrapy
-import lxml.etree
+from scrapy.selector import Selector
 from maoyan.items import MaoyanItem
 
 
@@ -10,9 +10,9 @@ class FilmSpider(scrapy.Spider):
     start_urls = ['https://maoyan.com/films?showType=3']
 
     def parse(self, response):
-        selector = lxml.etree.HTML(response.text)
+
         # 获取电影列表
-        tags = selector.xpath(
+        tags = Selector(response=response).xpath(
             '//div[@class="movie-item film-channel"]')
         count = 0
         # list1 = []
