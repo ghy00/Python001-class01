@@ -7,13 +7,16 @@
 import pandas as pd
 
 
-class MaoyanPipeline(object):
+class MaoyanPipeline:
     # def process_item(self, item, spider):
     # return item
 
     def process_item(self, item, spider):
-        list1 = [(item['title'], item['types'], item['times'])]
 
-        movie = pd.DataFrame(data=list1)
-        movie.to_csv('./movie.csv', encoding='utf-8', index=False, header=False)
+        title = item['title']
+        types = item['types']
+        times = item['times']
+        with open('./movies.csv', 'a+', encoding='utf-8') as f:
+            output = f'{title}\t{types}\t{times}\n\n'
+            f.write(output)
         return item

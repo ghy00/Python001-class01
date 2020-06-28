@@ -14,13 +14,10 @@ class FilmSpider(scrapy.Spider):
         # 获取电影列表
         tags = Selector(response=response).xpath(
             '//div[@class="movie-item film-channel"]')
-        count = 0
-        # list1 = []
-        for tag in tags:
+
+        for i in range(10):
             # 只取前10个电影
-            count += 1
-            if count >= 10:
-                break
+            tag = tags[i]
 
             # 获取电影名称
             title = tag.xpath(
@@ -39,5 +36,3 @@ class FilmSpider(scrapy.Spider):
             item['times'] = times
 
             yield item
-
-
